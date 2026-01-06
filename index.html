@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Lover Restaurant - Taste & Tradition</title>
+    <meta name="description"
+        content="Food Lover Restaurant - Discover the perfect blend of taste and tradition. Fresh ingredients, delicious dishes, and a welcoming ambiance.">
+    <link rel="icon" type="image/png" href="./image/logo.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top shadow-lg" role="navigation"
+            aria-label="Main Navigation" data-aos="fade-down" data-aos-duration="800">
+            <div class="container">
+                <a class="navbar-brand" href="#home" aria-label="Go to home section">
+                    <img src="./image/logo.png" alt="Food Lover Restaurant Logo" width="90" height="90" loading="lazy">
+                </a>
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
+                    aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars text-white fs-2"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="main">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home"><i class="fas fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about"><i class="fa fa-circle-info"></i> About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery"><i class="fas fa-images"></i> Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#chefs"><i class="fas fa-utensils"></i> Chefs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu"><i class="fas fa-bars"></i> Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact"><i class="fas fa-headset"></i> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="container hero-img" data-aos="fade-down" data-aos-duration="1000">
+            <h1 class="text-white">
+                Welcome To <span class="text-hero">Food Lover</span> Restaurant
+            </h1>
+            <p class="text-white lead">
+                Discover the perfect blend of taste and tradition in every dish we serve.
+            </p>
+            <a href="#menu" class="btn book">Check Our Menu</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-3" id="about">
+        <div class="container">
+            <div class="text-capitalize text-center">
+                <h2 class="" data-aos="fade-up" data-aos-duration="800">
+                    the Food Lover history
+                </h2>
+                <p class="fw-semibold text-muted">more than +25 years of experience</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-muted fs-5" data-aos="fade-right" data-aos-duration="900">
+                        At <strong>Food Lover</strong>, we craft unforgettable culinary experiences using the freshest
+                        ingredients and unique flavors, served in a warm and inviting ambiance.
+                    </p>
+                    <p class="text-muted fs-5" data-aos="fade-right" data-aos-delay="200" data-aos-duration="900">
+                        Whether you're stopping by for a quick bite or enjoying a family meal, we guarantee your
+                        satisfaction in every dish we prepare.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img loading="lazy" src="./image/about_img.webp"
+                        alt="Chef preparing a delicious meal at Food Lover Restaurant" class="img-fluid"
+                        data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery my-3" id="gallery">
+        <div class="container">
+            <h2 class="text-center text-white pt-4" data-aos="fade-up" data-aos-duration="800">
+                Delicious Food Gallery
+            </h2>
+            <div class="row g-4 p-4">
+                <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-duration="900">
+                    <img loading="lazy" class="img-fluid shadow rounded hover-scale"
+                        src="https://www.freefoodphotos.com/imagelibrary/drink/cinamon_chocolate_drink.jpg"
+                        alt="Cinnamon chocolate drink in a glass">
+                </div>
+
+                <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="900">
+                    <img loading="lazy" class="img-fluid shadow rounded hover-scale"
+                        src="https://www.freefoodphotos.com/imagelibrary/confectionery/ricotta%20_raspberry_cheesecake.jpg"
+                        alt="Slice of ricotta raspberry cheesecake">
+                </div>
+
+                <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="900">
+                    <img loading="lazy" class="img-fluid shadow rounded hover-scale"
+                        src="https://www.freefoodphotos.com/imagelibrary/breakfast/breakfast_eggs_crumept.jpg"
+                        alt="Breakfast with eggs and crumpet on a plate">
+                </div>
+
+                <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="900">
+                    <img loading="lazy" class="img-fluid shadow rounded hover-scale"
+                        src="https://www.freefoodphotos.com/imagelibrary/meals/chicken_shashlik.jpg"
+                        alt="Chicken shashlik meal served with vegetables">
+                </div>
+
+                <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="900">
+                    <img loading="lazy" class="img-fluid shadow rounded hover-scale"
+                        src="https://www.freefoodphotos.com/imagelibrary/meat/authentic_ramen.jpg"
+                        alt="Authentic Japanese ramen bowl with meat and vegetables">
+                </div>
+
+                <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="900">
+                    <img loading="lazy" class="img-fluid shadow rounded hover-scale"
+                        src="https://www.freefoodphotos.com/imagelibrary/dairy/slides/cheese.jpg"
+                        alt="Freshly baked Italian lasagne with cheese">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chefs Section -->
+    <section id="chefs">
+        <div class="container text-center py-5">
+            <div class="text-center text-capitalize">
+                <h2 class="" data-aos="fade-up" data-aos-duration="800">
+                    Meet Our Chefs
+                </h2>
+                <p class="fw-semibold text-muted" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                    Our chefs are passionate about creating culinary masterpieces that delight your taste buds.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-3" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="card">
+                        <img loading="lazy" src="./image/chef1.jpg" class="card-img-top"
+                            alt="Chef Antonio Rossi - Expert in Italian Cuisine">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Chef Antonio Rossi</h5>
+                            <p class="card-text">Expert in Italian Cuisine</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3" data-aos="flip-left" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="card">
+                        <img loading="lazy" src="./image/chef2.jpg" class="card-img-top"
+                            alt="Chef Sarah Mitchell - Specialist in French Pastry">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Chef Sarah Mitchell</h5>
+                            <p class="card-text">Specialist in French Pastry</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3" data-aos="flip-left" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="card">
+                        <img loading="lazy" src="./image/chef3.jpg" class="card-img-top"
+                            alt="Chef Mei Lin - Specialist in Asian Fusion Cuisine">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Chef Mei Lin</h5>
+                            <p class="card-text">Specialist in Asian Fusion Cuisine</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3" data-aos="flip-left" data-aos-delay="600" data-aos-duration="1000">
+                    <div class="card">
+                        <img loading="lazy" src="./image/chef4.jpg" class="card-img-top"
+                            alt="Chef Emily Brown - Expert in Healthy Dishes">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Chef Emily Brown</h5>
+                            <p class="card-text">Expert in Healthy Dishes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="bg-light p-5">
+        <div class="text-capitalize text-center">
+            <h2>Explore Our Special Menu</h2>
+            <p class="text-muted fw-semibold">Order two and get third for free</p>
+        </div>
+        <div class="container">
+            <div class="menu-items row">
+
+                <div class="col-md-6">
+
+                    <div class="menu-item">
+                        <img loading="lazy" src="./image/food1.png" alt="Lasal Cheese">
+                        <div>
+                            <h3>Lasal Cheese <span>$28.00</span></h3>
+                            <p>Creamy Lasal cheese served with fresh herbs and warm bread.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img loading="lazy" src="./image/food2.png" alt="Jumbo Crab Shrimp">
+                        <div>
+                            <h3>Jumbo Crab Shrimp <span>$24.00</span></h3>
+                            <p>Grilled jumbo shrimp and crab, seasoned with garlic butter.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img loading="lazy" src="./image/food3.png" alt="Koktail Juice">
+                        <div>
+                            <h3>Koktail Juice <span>$12.00</span></h3>
+                            <p>Refreshing mix of tropical fruits served chilled.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img loading="lazy" src="./image/food4.png" alt="Capo Steak">
+                        <div>
+                            <h3>Capo Steak <span>$60.00</span></h3>
+                            <p>Premium beef steak grilled to perfection with house spices.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img loading="lazy" src="./image/food5.png" alt="Organic Fruit Salad">
+                        <div>
+                            <h3>Organic Fruit Salad <span>$8.00</span></h3>
+                            <p>Fresh seasonal fruits served with a honey-mint dressing.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img loading="lazy" src="./image/food6.png" alt="Cheese Pizza">
+                        <div>
+                            <h3>Cheese Pizza <span>$18.00</span></h3>
+                            <p>Classic pizza topped with mozzarella and cheddar cheese.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-items-right col-md-6">
+                    <div class="menu-item">
+                        <img loading="lazy" src="./image/food7.jpeg" alt="Kofta Meat">
+                        <div>
+                            <h3>Kofta Meat <span>$40.00</span></h3>
+                            <p>Juicy minced meat kofta served with fresh bread and salad.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img loading="lazy" src="./image/food8.jpeg" alt="Spanish Pies">
+                        <div>
+                            <h3>Spanish Pies <span>$14.00</span></h3>
+                            <p>Golden pastry pies filled with vegetables and spiced meat.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img loading="lazy" src="./image/food9.jpeg" alt="Cheese Toast">
+                        <div>
+                            <h3>Cheese Toast <span>$6.00</span></h3>
+                            <p>Toasted bread topped with melted cheese and herbs.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img loading="lazy" src="./image/food10.jpeg" alt="Fruit Salad">
+                        <div>
+                            <h3>Fruit Salad <span>$14.00</span></h3>
+                            <p>Colorful mix of fresh fruits served with yogurt topping.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img loading="lazy" src="./image/food11.jpeg" alt="Chicken Shawarma">
+                        <div>
+                            <h3>Chicken Shawarma <span>$20.00</span></h3>
+                            <p>Marinated chicken wrapped in warm bread with garlic sauce.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img loading="lazy" src="./image/food12.jpeg" alt="Mega Cheese Pizza">
+                        <div>
+                            <h3>Mega Cheese Pizza <span>$30.00</span></h3>
+                            <p>Extra-large pizza loaded with a blend of four cheeses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="learn-more">
+                <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Learn More</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Time Table Section -->
+    <section class="time-table">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-center pt-3 text-white">
+                    <img loading="lazy" src="./image/breckfastIcon.png" alt="breakfast">
+                    <h3 class="text-capitalize">breakfast</h3>
+                    <p class="fw-semibold">8:00 am to 10:00 am</p>
+                </div>
+
+                <div class="col-md-3 text-center pt-3 text-white">
+                    <img loading="lazy" src="./image/lunchIcon.png" alt="lunch">
+                    <h3 class="text-capitalize">lunch</h3>
+                    <p class="fw-semibold">4:00 pm to 7:00 pm</p>
+                </div>
+
+                <div class="col-md-3 text-center pt-3 text-white">
+                    <img loading="lazy" src="./image/dinnerIcon.png" alt="dinner">
+                    <h3 class="text-capitalize">dinner</h3>
+                    <p class="fw-semibold">9:00 pm to 11:00 pm</p>
+                </div>
+
+                <div class="col-md-3 text-center pt-3 text-white">
+                    <img loading="lazy" src="./image/dessertIcon.png" alt="dessert">
+                    <h3 class="text-capitalize">dessert</h3>
+                    <p class="fw-semibold">all day</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="special">
+        <div class="text-center text-capitalize">
+            <h2>Special Offers</h2>
+            <p class="text-white fw-semibold">More than 25+ years of experience</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 py-2 text-center">
+                    <img loading="lazy" class="imgs" src="./image/offer1.png" alt="Special Offer 1">
+                    <h3 class="text-capitalize">quattro pasta</h3>
+                    <p>Pasta mixed with four rich cheeses for a creamy, flavorful delight.</p>
+                    <del>$55.00</del> <span class="fw-bold text-warning fs-5">$18.00</span>
+                </div>
+
+                <div class="col-md-4 py-2 text-center">
+                    <img loading="lazy" class="imgs" src="./image/offer2.png" alt="Special Offer 2">
+                    <h3 class="text-capitalize">vegetarian pasta</h3>
+                    <p>Fresh vegetables and herbs tossed with perfectly cooked pasta.</p>
+                    <del>$45.00</del> <span class="fw-bold text-warning fs-5">$20.00</span>
+                </div>
+
+                <div class="col-md-4 py-2 text-center">
+                    <img loading="lazy" class="imgs" src="./image/offer3.png" alt="Special Offer 3">
+                    <h3 class="text-capitalize">gluten-free pasta</h3>
+                    <p>Delicious gluten-free pasta made with healthy, natural ingredients.</p>
+                    <del>$80.00</del> <span class="fw-bold text-warning fs-5">$32.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="bg-white pt-3">
+        <h2 class="text-capitalize text-center pb-4">Contact us</h2>
+        <div class="container">
+            <div class="row">
+                <div class="awf col-md-6">
+                    <h3 class="text-capitalize mb-3">address</h3>
+                    <p><i class="text-warning fs-3 fa fa-map-marker-alt"></i> 123 Main St, City, State, Zip</p>
+                    <p><i class="text-warning fs-3 fa fa-phone"></i> Phone: 123456789</p>
+                    <p><i class="text-warning fs-3 fa fa-envelope"></i> info@example.com</p>
+
+                    <h3 class="text-capitalize">working hour</h3>
+                    <p class=""><span class="fw-bold">Weekdays:</span> 8:00 am - 11:00 pm</p>
+                    <p class=""><span class="fw-bold">Weekends:</span> 11:00 am - 1:00 am</p>
+
+                    <h3 class="text-capitalize">follow us</h3>
+                    <p>
+                        <a href="#"><i class="fs-1 icons fab fa-facebook"></i></a>
+                        <a href="#"><i class="fs-1 icons fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fs-1 icons fab fa-instagram"></i></a>
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <form action="">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="nameInp" placeholder="Full Name">
+                            <label for="nameInp">Full Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="emailInp" placeholder="name@example.com">
+                            <label for="emailInp">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea rows="5" class="form-control" id="messageInp" placeholder="Message"></textarea>
+                            <label for="messageInp">Message</label>
+                        </div>
+
+                        <button type="submit" class="btn-send">
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Send</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Food Lover. All rights reserved.</p>
+        <p>Designed by <a href="#" class="text-warning">Youssef Walid</a></p>
+    </footer>
+
+    <!-- Bootstrap JS with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,409 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(16, 37, 64, 0.8) !important;
+    z-index: 100;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #e88834 !important;
+}
+
+.nav-link i {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 4px;
+    border-radius: 5px;
+    background: #e88834;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+/* Home */
+.home {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../image/home_bg.jpeg') center/cover no-repeat fixed;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-img h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-img p {
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.text-hero {
+    color: #ff6a00;
+    font-style: italic;
+}
+
+/* Check Button */
+.book {
+    background: linear-gradient(135deg, #fd5227, #ff6a00);
+    color: #fff !important;
+    padding: 14px 34px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.35s ease;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.book:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.book::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    transform: skewX(-20deg);
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.book:hover::after {
+    left: 100%;
+}
+
+/* Gallery */
+.gallery {
+    background: url("../image/offer-background.jpg") center/cover no-repeat;
+}
+
+.hover-scale {
+    transition: all 0.3s ease;
+    aspect-ratio: 4 / 3;
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.05);
+}
+
+/* Chefs Cards */
+.card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 12px;
+    height: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    min-height: 120px;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Time Table */
+.time-table {
+    background: url("../image/daytime_bg.jpeg") no-repeat center/cover;
+    padding: 40px 0;
+}
+
+/* Special */
+.special {
+    background: url("../image/offer-background.jpg") no-repeat center/cover;
+    color: white;
+    padding: 20px;
+}
+
+.imgs:hover {
+    transform: rotate(30deg);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Menu */
+.menu-item {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    text-transform: capitalize;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .08);
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, .15);
+    transform: translateY(-5px);
+}
+
+.menu-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 2px solid #f0f0f0;
+}
+
+.menu-item h3 {
+    color: #333;
+    padding-bottom: 8px;
+    margin: 0;
+    position: relative;
+    font-size: 18px;
+}
+
+.menu-item h3::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    background: #ddd;
+}
+
+.menu-item span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: bold;
+    color: #ff9800;
+}
+
+.menu-item p {
+    margin-top: 8px;
+    color: #555;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Icons Social Media */
+.icons {
+    color: #333;
+}
+
+.fa-facebook:hover {
+    color: #1877f2;
+}
+
+.fa-instagram:hover {
+    color: #e4405f;
+}
+
+.fa-x-twitter:hover {
+    color: #000;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-x-twitter:hover {
+    transition: all 0.3s ease;
+}
+
+/* Button Learn More */
+.learn-more {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    width: 12rem;
+    height: auto;
+}
+
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover .circle {
+    width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+    color: #fff;
+}
+
+/* Button Send */
+.btn-send {
+    font-family: inherit;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #4dc7d9 0%, #66a6ff 100%);
+    color: white;
+    padding: 0.4em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.btn-send:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-send:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-send span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+}
+
+.btn-send svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+}
+
+.btn-send .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0.5em;
+    transition: all 0.3s;
+}
+
+.btn-send:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-send:hover svg {
+    transform: rotate(45deg);
+}
